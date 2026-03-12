@@ -1,0 +1,4 @@
+name = "Parquet"
+grammar = "plaintext"
+path_suffixes = ["parquet"]
+line_comments = []
