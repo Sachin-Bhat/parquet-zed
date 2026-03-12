@@ -1,0 +1,7 @@
+id = "parquet"
+name = "Parquet"
+version = "0.0.1"
+schema_version = 1
+authors = ["Sachin Bhat"]
+description = "View and edit Apache Parquet files in Zed"
+repository = "https://github.com/Sachin-Bhat/parquet-zed"
