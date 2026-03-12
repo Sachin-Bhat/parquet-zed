@@ -365,7 +365,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "42f5e15c9953c5e4ccceeb2e7382a716482c34515315f7b03532b8b4e8393d2d"
 
 [[package]]
-name = "parquet_zed_extension"
+name = "parquet_zed"
 version = "0.0.1"
 dependencies = [
  "zed_extension_api",
@@ -391,10 +391,6 @@ checksum = "b73949432f5e2a09657003c25bca5e19a0e9c84f8058ca374f49e0ebe605af77"
 dependencies = [
  "zerovec",
 ]
-
-[[package]]
-name = "pqtool"
-version = "0.1.0"
 
 [[package]]
 name = "prettyplease"
