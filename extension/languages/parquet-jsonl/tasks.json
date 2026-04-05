@@ -1,0 +1,16 @@
+[
+  {
+    "label": "Parquet: Save to Parquet",
+    "command": "sh",
+    "args": ["-c", "pqtool from-jsonl \"$ZED_FILE\" \"${ZED_FILE%.jsonl}\""],
+    "reveal": "always",
+    "use_new_terminal": false
+  },
+  {
+    "label": "Parquet: Preview Parquet",
+    "command": "sh",
+    "args": ["-c", "pqtool preview \"${ZED_FILE%.jsonl}\" > /tmp/parquet_preview_$(basename \"${ZED_FILE%.jsonl}\").md && zed /tmp/parquet_preview_$(basename \"${ZED_FILE%.jsonl}\").md"],
+    "reveal": "never",
+    "use_new_terminal": false
+  }
+]

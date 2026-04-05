@@ -1,0 +1,38 @@
+[
+  {
+    "label": "Parquet: Preview",
+    "command": "sh",
+    "args": [
+      "-c",
+      "pqtool preview \"$ZED_FILE\" > /tmp/parquet_preview_$(basename \"$ZED_FILE\").md && zed /tmp/parquet_preview_$(basename \"$ZED_FILE\").md"
+    ],
+    "reveal": "never",
+    "hide": "always",
+    "allow_concurrent_runs": false,
+    "use_new_terminal": false
+  },
+  {
+    "label": "Parquet: Edit as JSONL",
+    "command": "sh",
+    "args": [
+      "-c",
+      "pqtool to-jsonl \"$ZED_FILE\" && zed \"${ZED_FILE}.jsonl\""
+    ],
+    "reveal": "never",
+    "hide": "always",
+    "allow_concurrent_runs": false,
+    "use_new_terminal": false
+  },
+  {
+    "label": "Parquet: Save from JSONL",
+    "command": "sh",
+    "args": [
+      "-c",
+      "pqtool from-jsonl \"${ZED_FILE}.jsonl\" \"$ZED_FILE\""
+    ],
+    "reveal": "always",
+    "hide": "on_success",
+    "allow_concurrent_runs": false,
+    "use_new_terminal": false
+  }
+]
