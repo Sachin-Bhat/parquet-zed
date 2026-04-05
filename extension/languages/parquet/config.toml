@@ -1,4 +1,4 @@
 name = "Parquet"
 grammar = "plaintext"
 path_suffixes = ["parquet"]
-line_comments = []
+language_servers = ["parquet-lsp"]
