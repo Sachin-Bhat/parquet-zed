@@ -5,7 +5,12 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1"
-clap = { version = "4.5", features = ["derive"] }
+arrow = { version = "58", features = ["prettyprint", "chrono-tz"] }
+arrow-json = "58"
+clap = { version = "4.6", features = ["derive"] }
+lsp-server = "0.7"
+lsp-types = "0.97"
 parquet = { version = "58", features = ["arrow"] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
+notify = { version = "8", features = ["macos_fsevent"] }
